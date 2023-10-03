@@ -6,29 +6,15 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Main",
-            "request": "launch",
-            "mainClass": "Main",
-            "projectName": "JavaFX_5183728"
-        },
-        {
-            "type": "java",
-            "name": "Main",
-            "request": "launch",
-            "mainClass": "main.Main",
-            "projectName": "JavaFX_5183728"
-        },
-        {
-            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
         },
         {
             "type": "java",
-            "name": "App",
+            "name": "Main",
             "request": "launch",
-            "mainClass": "App",
+            "mainClass": "main.Main",
             "projectName": "JavaFX_5183728",
             "vmArgs": "--module-path \"C:/Program Files/Java/javafx-sdk-21/lib\" --add-modules javafx.controls,javafx.fxml"
         }

@@ -1,5 +1,7 @@
 package banco;
 
+import main.Main;
+
 public class ContaPoupanca extends Conta implements ContaRendimento {
 
     private double taxaRendimento;
@@ -11,10 +13,13 @@ public class ContaPoupanca extends Conta implements ContaRendimento {
 
     @Override
     public void sacar(double valor) {
+
+        Main main = new Main();
+
         if (saldo >= valor) {
             saldo -= valor;
         } else {
-            System.out.println("Saldo insuficiente.");
+            main.exibirAlerta("Saldo insuficiente.");
         }
     }
 

@@ -1,6 +1,7 @@
 package banco;
 
-public abstract class Conta {
+
+public abstract class Conta{
     
     protected String titular;
     protected double saldo;
@@ -23,4 +24,5 @@ public abstract class Conta {
     public String getTitular() {
         return titular;
     }
+
 }

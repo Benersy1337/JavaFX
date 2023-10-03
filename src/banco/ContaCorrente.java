@@ -1,5 +1,6 @@
 package banco;
 
+import main.Main;
 
 public class ContaCorrente extends Conta {
     
@@ -12,11 +13,16 @@ public class ContaCorrente extends Conta {
 
     @Override
     public void sacar(double valor) {
+
+        Main main = new Main();
+
         if (saldo + limite >= valor) {
             saldo -= valor;
         } else {
-            System.out.println("Saldo insuficiente.");
+            main.exibirAlerta("Saldo insuficiente. Seu limite foi ultrapassado!");
         }
     }
+
+   
 }
 
